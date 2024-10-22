@@ -1,0 +1,105 @@
+* {
+    /* Zera o padding e margin de todos os elementos */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Garante que o box-model use a largura real do elemento */
+    font-family: 'Arial', sans-serif;
+    /* Fonte padrão da página */
+  }
+  
+  body {
+    background-color: #282c34;
+    /* Cor de fundo escura para criar contraste com os textos */
+    color: #fff;
+    /* Cor de texto branco para destacar no fundo escuro */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /* Usa flexbox para centralizar o conteúdo verticalmente */
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+    /* Centraliza o texto no cabeçalho */
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #00ff88;
+    /* Destaque para o título principal com uma cor vibrante */
+  }
+  
+  p {
+    font-size: 1.2rem;
+  }
+  
+  .game-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    /* Define o layout em coluna com espaçamento entre seções */
+  }
+  
+  .character-selection, .challenge-selection, .result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centraliza os elementos nas seções */
+  }
+  
+  .characters, .challenges {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    /* Usa flexbox para organizar os personagens e desafios em linha */
+    margin-top: 20px;
+  }
+  
+  .character-card, .challenge-card {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.2s;
+    /* Estiliza as cartas e adiciona animação suave ao passar o mouse */
+  }
+  
+  .character-card:hover, .challenge-card:hover {
+    transform: scale(1.05);
+    /* Aumenta levemente o tamanho do card ao passar o mouse */
+  }
+  
+  .character-card img, .challenge-card img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    /* Ajusta o tamanho das imagens nos cards */
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #00ff88;
+    border: none;
+    color: #282c34;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    /* Estilos para os botões com animação ao passar o mouse */
+  }
+  
+  button:hover {
+    background-color: #00cc6e;
+    /* Altera a cor do botão ao passar o mouse */
+  }
+  
+  .result {
+    margin-top: 40px;
+    text-align: center;
+  }
+  

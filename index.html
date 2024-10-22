@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!-- A declaração do tipo de documento HTML e a definição da linguagem da página -->
+<head>
+  <meta charset="UTF-8">
+  <!-- Define a codificação de caracteres como UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Configura a viewport para dispositivos móveis -->
+  <title>Escolha Seu Aventureiro</title>
+  <!-- Título da página exibido na aba do navegador -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Link para o arquivo CSS externo que contém os estilos da página -->
+</head>
+<body>
+  <!-- Corpo principal do documento HTML -->
+  <header>
+    <h1>Escolha Seu Aventureiro</h1>
+    <!-- Título principal do jogo -->
+    <p>Selecione seu personagem e desafio para começar a aventura!</p>
+    <!-- Breve descrição do jogo -->
+  </header>
+
+  <main class="game-container">
+    <!-- Container principal do jogo, com flexbox aplicado via CSS -->
+    
+    <!-- Escolha do Personagem -->
+    <section class="character-selection">
+      <h2>Escolha seu personagem</h2>
+      <!-- Título da seção de escolha do personagem -->
+      <div class="characters">
+        <!-- Div para agrupar os personagens usando flexbox -->
+        <div class="character-card">
+          <img src="guerreiro.jpg" alt="Guerreiro">
+          <!-- Imagem do guerreiro -->
+          <h3>Guerreiro</h3>
+          <!-- Nome do personagem -->
+          <p>Força e resistência incríveis.</p>
+          <!-- Descrição do personagem -->
+          <button class="select-character" data-character="guerreiro">Escolher</button>
+          <!-- Botão para selecionar o personagem, com um atributo de dados (data-character) para armazenar o nome do personagem -->
+        </div>
+        <!-- Repetimos o mesmo padrão para os outros personagens -->
+        <div class="character-card">
+          <img src="mago.jpg" alt="Mago">
+          <h3>Mago</h3>
+          <p>Habilidades mágicas poderosas.</p>
+          <button class="select-character" data-character="mago">Escolher</button>
+        </div>
+        <div class="character-card">
+          <img src="arqueiro.jpg" alt="Arqueiro">
+          <h3>Arqueiro</h3>
+          <p>Precisão e agilidade.</p>
+          <button class="select-character" data-character="arqueiro">Escolher</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Escolha do Desafio -->
+    <section class="challenge-selection">
+      <h2>Escolha seu desafio</h2>
+      <!-- Título da seção de escolha do desafio -->
+      <div class="challenges">
+        <!-- Div para agrupar os desafios -->
+        <div class="challenge-card">
+          <h3>Monstro Gigante</h3>
+          <p>Enfrente um monstro aterrorizante!</p>
+          <button class="select-challenge" data-challenge="monstro">Enfrentar</button>
+          <!-- Botão para selecionar o desafio -->
+        </div>
+        <div class="challenge-card">
+          <h3>Labirinto Sombrio</h3>
+          <p>Escape do labirinto antes que seja tarde.</p>
+          <button class="select-challenge" data-challenge="labirinto">Entrar</button>
+        </div>
+        <div class="challenge-card">
+          <h3>Tesouro Escondido</h3>
+          <p>Encontre o tesouro antes dos piratas!</p>
+          <button class="select-challenge" data-challenge="tesouro">Procurar</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resultado do Jogo -->
+    <section class="result">
+      <h2>Resultado da Aventura</h2>
+      <!-- Título da seção de resultado -->
+      <p id="game-result">Escolha um personagem e um desafio para ver o resultado!</p>
+      <!-- Parágrafo onde o resultado será mostrado dinamicamente -->
+    </section>
+  </main>
+
+ 
+</body>
+</html>
